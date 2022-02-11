@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Open+Sans:wght@300&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap");
+
+:root {
+  --blue: #69b9ff;
+  --white: #ffffff;
+  --grey: #676770;
+  --black: #383838;
+  --hover: #0082f3;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  display: block;
+  margin-top: 8px;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+.header {
+  padding: 0.2rem 15%;
+  position: absolute;
+  height: 60px;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 0px;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  color: var(--blue);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.header .navbar a {
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--grey);
+  margin-left: 3rem;
+}
+
+.header .navbar a:hover {
+  color: var(--hover);
+}
+
+.home {
+  background-image: url("images/IMAGE.svg");
+  height: 500px;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.content {
+  padding: 5px 10px;
+  text-align: center;
+  position: absolute;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.homeH1 {
+  position: absolute;
+  width: 529px;
+  height: 60px;
+  left: calc(50% - 529px / 2 + 0.5px);
+  top: -11px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+button {
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: small;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 100px;
+}
+
+.sign {
+  background: var(--blue);
+  color: var(--white);
+  border: var(--blue);
+  padding: 10px 20px;
+  margin: 8px 0;
+  margin-left: 25px;
+  width: max-content;
+}
+
+.learn {
+  padding: 10px 20px;
+  margin: 8px 0;
+  margin-left: 25px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: var(--white);
+  width: max-content;
+}
+
+.box-container {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  float: left;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  justify-content: space-between;
+}
+
+.box-container .box {
+  background: var(--white);
+  border: 1px solid #dcebf7;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+}
+
+.box-container .box h2 {
+  font-size: 20px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #676770;
+}
+.box-container .box p {
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: #6a859c;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 10px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--grey);
+}
+
+.paragraph {
+  padding-top: 1rem;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8e8e9c;
+}
+
+.contentBox {
+  margin-top: 380px;
+  background-image: url(images/Rectangle.svg);
+  padding: 100px;
+  padding-bottom: 1rem;
+  height: 780px;
+}
+
+.container h1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.image {
+  margin-top: 50px;
+  padding-top: 10px;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 430px;
+  height: 287px;
+}
+.image1 {
+  margin-left: 25px;
+}
+.image2 {
+  margin-left: 80px;
+}
+.image1 h2 {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.image2 h2 {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.image1 p {
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--white);
+  width: 400px;
+  height: 100px;
+}
+.image2 p {
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--white);
+  width: 400px;
+  height: 100px;
+}
+.tabPicture {
+  padding-top: 20px;
+  padding-left: 145px;
+  display: block;
+  justify-content: center;
+  width: 940px;
+  height: 627px;
+  border-radius: 5px;
+}
+
+.tabButtons {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.button1 {
+  margin-left: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--white);
+  background: #92a0ad;
+  border-radius: 4px;
+  border-color: #92a0ad;
+}
+
+.active {
+  background: #2e80b6;
+  border-color: #2e80b6;
+}
+.tabContent p {
+  padding-bottom: .5rem;
+  font-size: 13px;
+  line-height: 25px;
+  text-align: center;
+  color: #6a859c;
+}
+.tabContent h1 {
+  margin-left: 500px;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  font-size: 31px;
+  line-height: 36px;
+  text-align: left;
+  color: var(--grey);
+}
+footer {
+  /* padding-top: 10rem; */
+  display: flex;
+  justify-content: space-between;
+  /* background-color: pink; */
+  padding: 5rem 1rem 1rem 1rem; 
+}
+.aboutVelocity {
+  padding-left: 0;
+  padding-bottom: 5rem;
+
+}
+.aboutVelocity h4 {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--grey);
+  text-align: center;
+    
+}
+
+.aboutVelocity p {
+  padding-top: 2rem;
+  /* margin-left: -500px; */
+  font-size: 14px;
+  line-height: 25px;
+  color: #6a859c;
+  text-align: center;
+  height: 125px;
+  width: 400px;
+}
+
+.links a {
+  font-size: 13px;
+  line-height: 30px;
+  color: #668cad;
+  text-align: center;
+}
+.links h1{
+  padding-bottom: 2rem;
+}
+
+.links h1 {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #676770;
+}
+
+
+
+/* .social {
+  margin-left: 2rem;
+} */
